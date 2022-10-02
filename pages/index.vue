@@ -90,11 +90,7 @@
           { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'format-detection', content: 'telephone=no' },
-      { name: 'twitter:card', content: 'summary_large_image' },
-      {
-        name: 'twitter:image',
-        content: 'https://qr.capital/card-twitter.png'
-      }
+      { name: 'twitter:card', content: 'summary_large_image' }
         ],
       }
     },
