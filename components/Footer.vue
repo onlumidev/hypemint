@@ -1,6 +1,6 @@
 <template>
   <section>
-    <footer class="bg-white text-white">
+    <footer class="bg-white bg-opacity-70 text-white">
       <div class="container  mx-auto  items-center px-2 ">
 
 
@@ -40,11 +40,11 @@
   }
 
   .green {
-      color: #00EFCA;
+      color: #00cc63;
   }
 
   footer a:hover {
-    color: #00EFCA;
+    color: #00cc63;
     cursor: pointer;
   }
 
@@ -53,7 +53,7 @@
   }
 
   a.pitchbutton {
-    border: 1px solid #00EFCA;
+    border: 1px solid #00cc63;
   }
 
   #qrcapital-newsletter-en-ed87386a4c5c7bccb111 * {
@@ -111,7 +111,7 @@
   }
 
   .footerbutton:hover {
-    background: #00EFCA;
+    background: #00cc63;
     color: #000;
   }
 

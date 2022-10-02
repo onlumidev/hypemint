@@ -1,27 +1,32 @@
 <template>
-  <section class="fold-press text-white bg-black bg-opacity-90 border-b py-8">
+  <div>
+  <section class="fold-press text-white border-b py-8">
 
     <div class="container mx-auto pt-4 pb-12">
 
-      <div class="flex flex-wrap">
+      <div class="flex flex-wrap items-center">
   <div class="w-5/6 sm:w-1/2 p-6">
-    <img src="~static/images/cartas.png" />
+
   </div>
-  <div class="w-full sm:w-1/2 p-6 xs-hidden">
+  <div class="w-full sm:w-1/2 p-6">
 
 
 
     <h3 class="press-title">
-      Gaming NFTs
-
-
-
+      {{ $t('ourcompanies') }} <span class="green">Gaming NFTs</span>
     </h3>
 
-    {{ $t('game_text') }}
-        <ul>
-          <li>{{ $t('game_bullet1') }}</li>
-        </ul>
+
+            <p class="mkt-text">
+              {{ $t('game_text') }}
+            </p>
+
+            <ul class="mkt-bullets">
+              <li>{{ $t('game_bullet1') }}</li>
+              <li>{{ $t('mkt_bullet2') }}</li>
+              <li>{{ $t('mkt_bullet3') }}</li>
+            </ul>
+
 
 
   </div>
@@ -32,7 +37,7 @@
 
 
     <div class="container containermin mx-auto ">
-      <!-- Begin Mailchimp Signup Form -->
+      <!-- Begin Mailchimp Signup Form
 <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
 
 <div id="mc_embed_signup">
@@ -60,7 +65,7 @@
 	<div id="mce-responses" class="clear foot">
 		<div class="response" id="mce-error-response" style="display:none"></div>
 		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	</div>
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_256961a89b00c5d962724cbd0_7aa9097a16" tabindex="-1" value=""></div>
         <div class="optionalParent">
             <div class="clear foot">
@@ -71,15 +76,19 @@
     </div>
 </form>
 </div>
+-->
     </div>
      <a id="press" style="position: absolute;top: 0; bottom: 0; margin: auto;"></a>
   </section>
+  <img src="~static/images/cartas.png" class="nft-qr nft-cartas"  />
+
+</div>
 
 </template>
 
 <style>
   .fold-press .border-title {
-    border-bottom: 1px solid #00EFCA;
+    border-bottom: 1px solid #00cc63;
     display: inline-block;
     margin-bottom: 20px;
     font-size: 20px;
@@ -111,12 +120,7 @@
       color: #000;
   }
 
-  .press-title {
-      font-size: 78px;
-      line-height: 75px;
-      max-width: 452px;
-      margin-bottom: 20px;
-  }
+
 
   .anypress {
     padding-left: 11px;
@@ -138,7 +142,7 @@
   }
 
   .contact-button:hover {
-    background: #00EFCA;
+    background: #00cc63;
     color: #000;
   }
 
@@ -163,9 +167,7 @@
   .noticias-box .closequote img {
     display: inline-block;
   }
-  .fold-press  {
-    padding-bottom: 150px;
-  }
+
   .fold-press .slick-list{
     overflow: inherit;
   }
@@ -262,6 +264,7 @@
 <i18n>
 {
   "en": {
+    "ourcompanies": "We do",
     "game_text": "Actually it’s very popular in the game market and is generating billions of dollars every month, quarter and year. It’s easy to integrate and with high demand at the moment, our studio is prepared for the best and most complex projects you can imagine. We can create arts and rewards in order to make your business grow exponentially, reaching large audiences to offer various monetization opportunities.",
     "game_bullet1": "Go beyond the fun of games, profit too."
   }

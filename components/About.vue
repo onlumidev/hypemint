@@ -1,36 +1,38 @@
 <template>
-  <section class="bg-black bg-opacity-90 text-white fold-about py-8">
 
-    <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+  <div>
+  <section class="text-white fold-about py-8">
 
-      <h2 class="border-title my-2 pt-50 text-1xl  leading-tight text-center text-white">
 
-      </h2>
-
-    </div>
 
     <div class="container containermin mx-auto ">
       <div class="flex flex-wrap">
-      <div class="w-5/6 sm:w-1/2 p-6">
+      <div class="w-full sm:w-1/2 p-6">
 
-        <h3 class="press-title">
 
-          {{ $t('about') }}
 
-        </h3>
+            <h3 class="press-title mt-20">
+              {{ $t('ourcompanies') }}
 
-        {{ $t('art_text') }}
-            <ul>
+              <span class="green">{{ $t('about') }}</span>
+
+            </h3>
+            <p class="mkt-text">
+              {{ $t('art_text') }}
+            </p>
+
+            <ul class="mkt-bullets mb-40">
               <li>{{ $t('art_bullet1') }}</li>
               <li>{{ $t('art_bullet2') }}</li>
               <li>{{ $t('art_bullet3') }}</li>
             </ul>
 
 
+
       </div>
       <div class="w-full sm:w-1/2 p-6 xs-hidden">
 
-        <img src="~static/images/moments.png" />
+
 
 
 
@@ -40,26 +42,27 @@
 
     <a id="about" style="position: absolute;top: 0; bottom: 0; margin: auto;"></a>
   </section>
+  <img src="~static/images/moments.png" class="nft-qr nft-moments" />
+</div>
+
 
 </template>
 
 <style>
   .border-title {
-    border-bottom: 1px solid #00EFCA;
+    border-bottom: 1px solid #00cc63;
     display: inline-block;
     margin: auto;
     font-size: 20px;
   }
 
+
   .fold-about .portfolio-texto {
     max-width: 430px;
   }
 
-  .fold-about {
-    overflow: hidden;
-    padding-top: 40px;
-    clip-path: polygon(0% 11%, 100% 0%, 100% 100%, 0% 86%);
-  }
+
+
 
   .fold-about .slick-track.slick-center{
 
@@ -100,7 +103,8 @@
 <i18n>
 {
   "en": {
-    "about": "Digital arts & collectibles",
+    "ourcompanies": "We do",
+    "about": "Marketplace",
     "art_text": "We can build for you the most secure, reliable and elegant NFT marketplace with a proprietary, blockchain-powered cryptographic wallet protected with hardware-level security with protocol. We deliver a seamless user growth experience and business generation capability.",
     "art_bullet1": "Have an open and authorized NFT market",
     "art_bullet2": "Customized packaging, auctions and commercial FP models",

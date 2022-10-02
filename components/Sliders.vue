@@ -8,14 +8,14 @@
       <a id="building" style="position: absolute;top: 0; bottom: 0; margin: auto;"></a>
         <div class="building-bg">
           <div class="container  mx-auto">
-            <div class="flex flex-wrap">
-              <div class="w-5/6 sm:w-1/2 p-6">
+            <div class="flex items-center flex-wrap">
+              <div  class="w-full sm:w-1/2 p-6">
 
 
                 <h3 :class="{activetitle: isActive}" v-observe-visibility="{
                   callback: visibilityChanged
                 }">
-                  <p>{{ $t('disclaimer1') }}</p>
+                  <p>We are</p>
                   <!--
                   <p>{{ $t('disclaimer2') }}</p>
                   <p>{{ $t('disclaimer3') }}</p>
@@ -29,42 +29,11 @@
                 <!--<div>{{ $t('mission') }}
                 {{ $t('CEO') }}
                 </div>-->
-                <div class="joy-title">
-                  {{ $t('joinnews') }} <span class="green">{{ $t('news') }}</span>.
-                </div>
 
-                {{ $t('Keepup') }}
 
                 <!--<div role="main" id="qrcapital-newsletter-en-ed87386a4c5c7bccb111" v-if="$t('investments')=='Investments'"></div>-->
 
-                <!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
 
-<div id="mc_embed_signup">
-    <form action="https://hypemint.us9.list-manage.com/subscribe/post?u=256961a89b00c5d962724cbd0&amp;id=7aa9097a16&amp;f_id=008812e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-
-        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-</label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
-	<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
-</div>
-	<div id="mce-responses" class="clear foot">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_256961a89b00c5d962724cbd0_7aa9097a16" tabindex="-1" value=""></div>
-        <div class="optionalParent">
-            <div class="clear foot">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                <p class="brandingLogo"><a href="http://eepurl.com/ian8yT" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
-            </div>
-        </div>
-    </div>
-</form>
-</div>
 
               </div>
 
@@ -134,9 +103,7 @@
     font-weight: 600;
   }
 
-  .girafa {
-    margin-bottom: -75px;
-  }
+
 
   .banner-arrow a {
     cursor: pointer;
@@ -153,7 +120,7 @@
   }
 
   #rd-button-l145hm6j:hover {
-    background:#00EFCA;
+    background:#00cc63;
   }
 
   #rd-section-l145hm69 {
@@ -191,7 +158,7 @@
   }
 
   .green {
-    color: #00EFCA;
+    color: #00cc63;
   }
 
   .banners {
@@ -226,7 +193,7 @@
   .building-bg {
 
     color: #fff;
-    padding: 120px 0 0;
+    padding: 60px 0 0;
   }
 
   .box {
@@ -468,10 +435,6 @@
       margin-top: 0px;
     }
 
-    .building-bg .w-full {
-        margin-top: 110px;
-    }
-
     body #rd-button-l145hm6j {
 
         height: 65px;
@@ -483,7 +446,7 @@
       position: absolute;
       top:50px;
       font-size: 15px;
-      border-bottom: 1px solid #00EFCA;
+      border-bottom: 1px solid #00cc63;
     }
 
    .banners {

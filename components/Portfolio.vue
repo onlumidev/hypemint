@@ -1,42 +1,67 @@
 <template>
+  <div>
 
-  <section class="border-b bg-black bg-opacity-90  text-white fold-portfolio" ref="portfolio">
-    <div class="container mx-auto pt-4">
+    <section class="border-b   text-white fold-portfolio" ref="portfolio">
+      <div class="container mx-auto pt-4">
 
 
 
-<div class="flex flex-wrap">
-  <div class="w-5/6 sm:w-1/2 p-6">
-    <img src="~static/images/qr-fold.png" class="mustache" />
+        <div class="flex flex-wrap items-center">
+          <div class="w-5/6 sm:w-1/2 p-6 fold-920">
+            <img src="~static/images/qr-fold.png" class="mustache" />
+
+          </div>
+          <div class="w-full sm:w-1/2 p-6">
+
+            <h3 class="press-title ">
+              {{ $t('ourlast') }}
+
+              <span class="blue">{{ $t('bluework') }}</span>
+
+            </h3>
+
+            <div class="mb-10">
+              <a href="https://criptomasterclass.com/" target="_blank">
+                <img src="~static/images/logos-cm-qr.svg" class="logo-qr" />
+              </a>
+            </div>
+
+
+            <a class="btn mr-10" href="https://br.financas.yahoo.com/noticias/qr-capital-e-criptoman%C3%ADacos-lan%C3%A7am-130046424.html" target="_blank">On Press</a>
+
+            <a class="btn" href="https://opensea.io/collection/hodl-sapiens" target="_blank">On OpenSea</a>
+
+            <h3 class="press-title mt-20">
+              {{ $t('ourcompanies') }}
+
+              <span class="green">{{ $t('work') }}</span>
+
+            </h3>
+            <p class="mkt-text">
+              {{ $t('mkt_text') }}
+            </p>
+
+            <ul class="mkt-bullets">
+              <li>{{ $t('mkt_bullet1') }}</li>
+              <li>{{ $t('mkt_bullet2') }}</li>
+              <li>{{ $t('mkt_bullet3') }}</li>
+            </ul>
+
+
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+    </section>
+    <img src="~static/images/nft-qr.png" class="nft-qr" />
   </div>
-  <div class="w-full sm:w-1/2 p-6 xs-hidden">
 
-
-
-    <h3 class="press-title">
-      {{ $t('ourcompanies') }}
-
-      <span class="green">{{ $t('work') }}</span>.
-      <img src="~static/images/qr-logo.png" />
-    </h3>
-
-    {{ $t('mkt_text') }}
-        <ul>
-          <li>{{ $t('mkt_bullet1') }}</li>
-          <li>{{ $t('mkt_bullet2') }}</li>
-          <li>{{ $t('mkt_bullet3') }}</li>
-        </ul>
-
-
-  </div>
-</div>
-
-
-</div>
-
-
-
-  </section>
 
 </template>
 <script>
@@ -48,12 +73,18 @@ export default {
 </script>
 
 <style>
+
+.logo-qr {
+  width: 340px;
+}
+
 .border-title {
-  border-bottom: 1px solid #00EFCA;
+  border-bottom: 1px solid #00cc63;
   display: inline-block;
   margin: auto;
   font-size: 20px;
 }
+
 
 .fold-portfolio {
   justify-content: center;
@@ -61,11 +92,15 @@ export default {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  clip-path: polygon(0% 11%, 100% 0%, 100% 100%, 0% 86%);
+  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 100%);
 }
+
 .mustache {
-  margin-top:-80px;
+  margin-top: -30px;
+  margin-bottom: -68px;
 }
+
 .webuild {
   max-width: 689px;
   margin: auto;
@@ -104,7 +139,7 @@ h3 {
 
 h4 {
   line-height: 30px;
-  border-bottom: 2px solid #00EFCA;
+  border-bottom: 2px solid #00cc63;
   display: inline-block;
   margin: 19px 0 19px;
   font-weight: 800;
@@ -116,25 +151,6 @@ h4 {
 }
 
 
-@media only screen and (min-width: 1200px) {
-  .fold-portfolio .slick-track.slick-center {
-
-    min-width: 1200px;
-  }
-}
-@media only screen and (min-width: 1500px) {
-  .fold-portfolio .slick-track.slick-center {
-
-    min-width: 1500px;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .fold-portfolio .slick-track.slick-center {
-
-    min-width: 1600px;
-  }
-}
-
 
 @media only screen and (max-width: 1320px) {
   .fold-portfolio div .containermin {
@@ -145,7 +161,6 @@ h4 {
     max-width: 100%;
   }
 
-  .fold-portfolio .slick-track.slick-center {}
 
   .fold-portfolio .slick-list .slick-track {
     justify-content: center;
@@ -164,14 +179,24 @@ h4 {
     display: block;
     padding: 0 20px 57px;
     min-height: auto;
+    clip-path: polygon(0% 9%, 100% 0%, 100% 100%, 0% 100%);
   }
 
   .fold-portfolio h2 {
     margin-top: 39px;
   }
+}
 
+@media only screen and (max-width: 1024px) {
+  .fold-portfolio {
+    clip-path: polygon(0% 9%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
 
-
+@media only screen and (max-width: 768px) {
+  .fold-portfolio {
+    clip-path: polygon(0% 4%, 100% 0%, 100% 100%, 0% 100%);
+  }
 }
 </style>
 
@@ -180,8 +205,10 @@ h4 {
 {
   "en": {
     "portfolio": "What we do",
-    "ourcompanies": "Our last",
-    "work": "work",
+    "ourcompanies": "We do",
+    "work": "Campaigns",
+    "ourlast": "Our last",
+    "bluework": "work",
     "mkt_text": "Increase engagement and results in your campaigns using NFTs, give NFTs as a bonus, for special customers or in specific campaigns, if you will have an event, you can innovate giving a NFTs instead of a boring regular ticket. Whatever you think in marketing, we can help you with the best strategy!",
     "mkt_bullet1": "Rarity farming implementation to add value to your art",
     "mkt_bullet2": "Exclusive illustrations based on your project",
