@@ -517,6 +517,7 @@ nav li {
     margin: -116px auto 0;
     max-width: 100vw;
     left: 0;
+    max-width: 90vw;
 }
 
   .nft-qr.nft-moments {
@@ -525,6 +526,7 @@ nav li {
       margin-bottom: -26px;
       max-width: 100vw;
       right: 0;
+      max-width: 90vw;
   }
 
   .mkt-text,
@@ -555,6 +557,7 @@ nav li {
     position: relative;
     transform: skew(0deg, -6deg);
     margin-bottom: -109px;
+    max-width: 90vw;
     margin-left: 0;
   }
 
@@ -563,6 +566,7 @@ nav li {
     margin-bottom: -54px;
     margin-left: 0;
     max-height: 460px;
+    max-width: 90vw;
   }
 
   .fold-about {
