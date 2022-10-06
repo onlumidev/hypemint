@@ -64,15 +64,15 @@
           <div>
             <ul class="menu-mobile">
 
-              <li><a href="https://hypemint.io#about">{{ $t('menuportfolio') }}</a></li>
+              <li><a @click="closeMenu()" href="https://hypemint.io#about">{{ $t('menuportfolio') }}</a></li>
 
-<li><a href="https://hypemint.io#press">{{ $t('menuabout') }}</a></li>
+<li><a @click="closeMenu()" href="https://hypemint.io#press">{{ $t('menuabout') }}</a></li>
 
 <!--<li><a href="#jobs">{{ $t('menujobs') }}</a></li>-->
 
-<li><a href="https://hypemint.io#gaming">{{ $t('menuteam') }}</a></li>
+<li><a @click="closeMenu()" href="https://hypemint.io#gaming">{{ $t('menuteam') }}</a></li>
 
-<li><a href="https://hypemint.io#contact">{{ $t('menupress') }}</a></li>
+<li><a @click="closeMenu()" href="https://hypemint.io#contact">{{ $t('menupress') }}</a></li>
 
 
               <ul class="flex redes-mobile">
