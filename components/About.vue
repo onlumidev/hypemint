@@ -1,11 +1,14 @@
 <template>
 
   <div>
-  <section class="text-white fold-about py-8">
 
+
+  <section class="text-white fold-about py-8">
+    <a id="about" style="position: absolute; top: 0; "></a>
 
 
     <div class="container containermin mx-auto ">
+
       <div class="flex flex-wrap">
       <div class="w-full sm:w-1/2 p-6">
 
@@ -21,7 +24,7 @@
               {{ $t('art_text') }}
             </p>
 
-            <ul class="mkt-bullets mb-40">
+            <ul class="mkt-bullets ">
               <li>{{ $t('art_bullet1') }}</li>
               <li>{{ $t('art_bullet2') }}</li>
               <li>{{ $t('art_bullet3') }}</li>
@@ -38,11 +41,19 @@
 
       </div>
     </div>
+
+    <div class="container relative m-auto  not-on-desktop">
+      <img src="~static/images/moments.png" class="nft-qr nft-moments" />
+      </div>
+
     </div>
 
-    <a id="about" style="position: absolute;top: 0; bottom: 0; margin: auto;"></a>
   </section>
-  <img src="~static/images/moments.png" class="nft-qr nft-moments" />
+
+  <div class="container relative m-auto not-on-mobile">
+    <img src="~static/images/moments.png" class="nft-qr nft-moments" />
+  </div>
+
 </div>
 
 
@@ -96,7 +107,7 @@
 </style>
 <script>
   export default {
-      name: 'Digital arts & collectibles',
+      name: 'digital-arts-nfts-e-collectibles',
   }
 </script>
 

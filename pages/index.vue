@@ -15,7 +15,9 @@
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
   }
-
+  .snapcontrol {
+    overflow: hidden;
+  }
 
  /*
   html,

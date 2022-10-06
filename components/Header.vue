@@ -16,15 +16,15 @@
         <ul
           class="hidden md:justify-end absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center w-full lg:space-x-6">
 
-          <li><a @click="scrollToAnchorPoint('#portfolio')">{{ $t('menuportfolio') }}</a></li>
+          <li><a @click="scrollToAnchorPoint('#about')">{{ $t('menuportfolio') }}</a></li>
 
-          <li><a @click="scrollToAnchorPoint('#about')">{{ $t('menuabout') }}</a></li>
+          <li><a @click="scrollToAnchorPoint('#press')">{{ $t('menuabout') }}</a></li>
 
           <!--<li><a href="#jobs">{{ $t('menujobs') }}</a></li>-->
 
-          <li><a @click="scrollToAnchorPoint('#press')">{{ $t('menuteam') }}</a></li>
+          <li><a @click="scrollToAnchorPoint('#gaming')">{{ $t('menuteam') }}</a></li>
 
-          <li><a @click="scrollToAnchorPoint('#press')">{{ $t('menupress') }}</a></li>
+          <li><a @click="scrollToAnchorPoint('#contact')">{{ $t('menupress') }}</a></li>
 
 
 
@@ -67,20 +67,16 @@
           <div>
             <ul class="menu-mobile">
 
-              <li><a @click="scrollToAnchorPoint('#portfolio')">{{ $t('menuportfolio') }}</a></li>
+              <li><a @click="scrollToAnchorPoint('#about')">{{ $t('menuportfolio') }}</a></li>
 
-              <li><a @click="scrollToAnchorPoint('#about')">{{ $t('menuabout') }}</a></li>
+<li><a @click="scrollToAnchorPoint('#press')">{{ $t('menuabout') }}</a></li>
 
-              <!--<li><a href="#jobs">{{ $t('menujobs') }}</a></li>-->
+<!--<li><a href="#jobs">{{ $t('menujobs') }}</a></li>-->
 
-              <li><a @click="scrollToAnchorPoint('#team')">{{ $t('menuteam') }}</a></li>
+<li><a @click="scrollToAnchorPoint('#gaming')">{{ $t('menuteam') }}</a></li>
 
-              <li><a @click="scrollToAnchorPoint('#press')">{{ $t('menupress') }}</a></li>
+<li><a @click="scrollToAnchorPoint('#contact')">{{ $t('menupress') }}</a></li>
 
-              <li>
-                <a href="/contact" v-if="$t('menupress')=='PRESS'">{{ $t('menucontact') }}</a>
-                <a href="/pt/contact/" v-if="$t('menupress')=='IMPRENSA'">{{ $t('menucontact') }}</a>
-              </li>
 
               <ul class="flex redes-mobile">
                 <!--
@@ -263,7 +259,7 @@ nav a {
 }
 
 .girafa {
-
+  margin-left: 102px;
   margin-bottom: -72px;
   margin-top: 77px;
 }
@@ -322,51 +318,85 @@ nav li {
   margin-bottom: 2.5rem;
 }
 
-.btn {
+.btn, #mc_embed_signup .button.btn {
   background: rgb(1, 198, 117);
   background: linear-gradient(90deg, rgb(8, 175, 106) 0%, rgba(0, 169, 178, 1) 39%, rgb(0 140 238) 100%);
   padding: 12px 38px;
+  line-height: initial;
   border-radius: 7px;
+
+
+}
+
+.btn:hover, #mc_embed_signup:hover .button.btn:hover {
+  background: rgb(1, 198, 117);
+  background: linear-gradient(90deg, rgb(0 140 238) 0%, rgba(0, 169, 178, 1) 39%, rgb(8, 175, 106) 100%);
+}
+
+#mc_embed_signup .button.btn {
+  margin-top: 20px;
+  height: auto;
 }
 
 .nft-qr {
   position: absolute;
-  margin-top: -690px;
+  margin-top: -670px;
+  margin-left: -150px;
 }
 
 .fold-about {
-    overflow: hidden;
-    padding-top: 40px;
-    -webkit-clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 86%);
-    clip-path: polygon(0% 0%, 100% 24%, 100% 100%, 0% 87%);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 100%);
+  overflow: hidden;
+  padding-top: 40px;
+  clip-path: polygon(0 0, 29% 10%, 44% 14%, 100% 0, 100% 10%, 100% 0, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 100%);
 }
 
 .fold-press {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 100%);
-  clip-path: polygon(0% 3%, 100% 0%, 100% 100%, 0% 100%);
-  min-height: 948px;
+  clip-path: polygon(0% 19%, 0% 16%, 16% 14%, 100% 0%, 100% 10%, 100% 0, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+  min-height: 848px;
+  padding-top: 90px;
 }
 
 .nft-moments {
-    right: 0;
-    margin-top: -792px;
-  }
-
-  .nft-cartas {
-    margin-top: -1003px;
-    max-width: 641px;
-    left: 30px;
+  right: 0;
+  margin-top: -785px;
 }
 
-@media only screen and (max-width: 1300px) {
+.nft-cartas.nft-qr {
+  margin: -1172px auto 0;
+    max-width: 546px;
+    left: 30px;
+    transform: none;
+}
+
+.not-on-desktop {
+  display: none;
+}
+
+
+@media only screen and (max-width: 1500px) {
   .girafa {
     margin-bottom: -62px;
     margin-top: 73px;
+    margin-left: 44px;
   }
+
+  .nft-cartas.nft-qr {
+    margin-top: -1010px;
+    max-width: 456px;
+
+}
 
   .navbar-burger {
     top: 53px;
+  }
+
+  .nft-qr.nft-moments {
+    margin-top: -710px;
+    right: -26px;
+    transform: none;
+    max-width: 736px;
   }
 
   header {
@@ -383,72 +413,90 @@ nav li {
   }
 
   .nft-qr {
-  margin-top: -444px;
+    transform: skew(0deg, 4deg);
+    margin-top: -439px;
     max-width: 524px;
-}
+    margin-left: -119px;
+  }
 
   .mkt-text {
 
     font-size: 17px;
 
-}
+  }
 
-.mkt-bullets li {
+  .mkt-bullets li {
 
     font-size: 17px;
-}
+  }
 
 
-.mustache {
+  .mustache {
 
     margin-bottom: -114px;
-}
+  }
 
 
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1300px) {
+
+  .nft-qr.nft-moments {
+    margin-top: -582px;
+    max-width: 556px;
+    right: 30px;
+  }
+
   .girafa {
     margin-bottom: -57px;
     margin-top: 70px;
+    margin-left: 0;
+  }
+
+  .nft-qr {
+
+    margin-left: -64px;
+  }
+
+  .mb-40 {
+    margin-bottom: 10rem;
   }
 
   .mustache {
 
     margin-bottom: -113px;
-}
+  }
 
-.press-title.mb-10 {
+  .press-title.mb-10 {
     margin-bottom: 0.5rem;
-}
+  }
 
   .mt-20 {
     margin-top: 2rem;
-}
+  }
 
   .mustache {
     margin-top: -175px;
 
-}
+  }
 
-.press-title {
+  .press-title {
     font-size: 33px;
 
-}
+  }
 
-
-
-.container {
+  .container {
     margin: 0;
     max-width: none;
-}
+  }
 
-.btn {
-  display: block;
+  .btn {
+    display: block;
     text-align: center;
     margin-bottom: 24px;
     margin-right: 0;
-}
+
+  }
 
   .logolink {
     margin-left: 22px;
@@ -456,26 +504,105 @@ nav li {
 
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 990px) {
   .fold-920 {
     display: none;
   }
-  .w-full.sm\:w-1\/2 {
-    width: 100%;
-    padding-top: 65px;
-}
-.nft-qr {
-    margin-top: -269px;
-    max-width: 412px;
-    right: -28px;
-}
-.mkt-text, .mkt-bullets {
-    margin-right: 278px;
+
+  .not-on-mobile {
+    display: none;
+  }
+
+  .nft-qr.nft-cartas {
+    margin: -116px auto 0;
+    max-width: 100vw;
+    left: 0;
 }
 
-.fold-about {
-    clip-path: polygon(0% 0%, 100% 9%, 100% 100%, 0% 86%);
-}
+  .nft-qr.nft-moments {
+      transform: initial;
+      margin-top: -143px;
+      margin-bottom: -26px;
+      max-width: 100vw;
+      right: 0;
+  }
+
+  .mkt-text,
+  .mkt-bullets {
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+
+  .fold-portfolio .w-full.sm\:w-1\/2 {
+    margin-top: 10px;
+  }
+
+  .fold-portfolio,
+  .fold-about,
+  .fold-press {
+    clip-path: initial;
+  }
+
+  .not-on-desktop {
+    display: block;
+  }
+
+  .nft-qr {
+    max-width: 460px;
+    margin-top: -40px;
+    right: 0px;
+    position: relative;
+    transform: skew(0deg, -6deg);
+    margin-bottom: -109px;
+    margin-left: 0;
+  }
+
+  .girafa {
+    margin-top: -86px;
+    margin-bottom: -54px;
+    margin-left: 0;
+    max-height: 460px;
+  }
+
+  .fold-about {
+    padding-top: 0;
+    margin-top: -2px;
+  }
+
+  .w-full.sm\:w-1\/2 {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .building-bg .w-full.sm\:w-1\/2 {
+    margin-top: 90px;
+  }
+
+  .press-title {
+    text-align: center;
+  }
+
+  .building-bg h3 {
+    font-size: 54px;
+    line-height: 67px;
+    text-align: center;
+  }
+
+  .nft-qr {
+    max-width: 431px;
+    margin: -23px auto -102px;
+  }
+
+
+  .nft-qr.nft-moments {
+    transform: initial;
+    margin-top:-20px;
+    margin-bottom: -35px;
+  }
 
 }
 
@@ -488,19 +615,20 @@ nav li {
   }
 
 
-  .nft-qr {
-    max-width: 227px;
-    margin-top: -108px;
-    right: 0px;
-}
 
-  .mkt-text, .mkt-bullets {
+
+
+  .mkt-text,
+  .mkt-bullets {
     margin-right: 0;
-}
+  }
 
-.fold-about {
-  clip-path: polygon(0% 0%, 100% 17%, 100% 100%, 0% 86%);
-}
+  .fold-about .w-full.sm\:w-1\/2 {
+
+    margin-top: 0;
+
+  }
+
 
 
 
@@ -515,7 +643,7 @@ nav li {
 
   .girafa {
     margin-bottom: -78px;
-    margin-top: -1px;
+    margin-top: -64px;
   }
 
 }
@@ -526,17 +654,13 @@ nav li {
     margin-top: -4px;
     max-width: 419px;
   }
-  .nft-qr {
-    max-width: 201px;
-    margin-top: -96px;
-    right: 0px;
-}
+
 }
 
 @media only screen and (max-width: 520px) {
   .girafa {
-    margin-bottom: -89px;
-    margin-top: -4px;
+    margin-bottom: -80px;
+    margin-top: -61px;
     max-width: 404px;
   }
 }

@@ -11,7 +11,9 @@
             <div class="flex items-center flex-wrap">
               <div  class="w-full sm:w-1/2 p-6">
 
-
+                <h2 class="gray-title">
+                  Your business on Web3
+                </h2>
                 <h3 :class="{activetitle: isActive}" v-observe-visibility="{
                   callback: visibilityChanged
                 }">
@@ -41,9 +43,6 @@
                 <div>
                   <img src="~static/images/girafa.png" class="girafa" />
                 </div>
-
-
-
               </div>
             </div>
 
@@ -191,7 +190,6 @@
   }
 
   .building-bg {
-
     color: #fff;
     padding: 60px 0 0;
   }
@@ -444,9 +442,10 @@
 
     .gray-title {
       position: absolute;
-      top:50px;
-      font-size: 15px;
-      border-bottom: 1px solid #00cc63;
+    top: 50px;
+    left: 0;
+    font-size: 16px;
+    right: 0;
     }
 
    .banners {

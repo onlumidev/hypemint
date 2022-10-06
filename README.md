@@ -1,5 +1,3 @@
-# hype-mint
-
 ## Build Setup
 
 ```bash

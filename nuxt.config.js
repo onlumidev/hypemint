@@ -3,6 +3,11 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Hype Mint | NFT Art & Development Services',
+    script: [
+      {
+        src: "https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js",
+      },
+    ],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -10,10 +15,15 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favi.ico' },
       {
         href:
           'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap',
+        rel: 'stylesheet'
+      },
+      {
+        href:
+          'https://cdn-images.mailchimp.com/embedcode/classic-071822.css',
         rel: 'stylesheet'
       }
     ]
@@ -34,11 +44,15 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-analytics'
   ],
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/i18n',
   ],
+  googleAnalytics: {
+    id: 'G-SY414E95P7'
+  },
   i18n: {
     baseUrl: 'https://hypemint.io',
     vueI18nLoader: true,

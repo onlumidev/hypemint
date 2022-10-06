@@ -1,12 +1,12 @@
 <template>
   <div>
 
-    <section class="border-b   text-white fold-portfolio" ref="portfolio">
+    <section class="border-b  text-white fold-portfolio" ref="portfolio">
       <div class="container mx-auto pt-4">
 
 
 
-        <div class="flex flex-wrap items-center">
+        <div class="flex flex-wrap">
           <div class="w-5/6 sm:w-1/2 p-6 fold-920">
             <img src="~static/images/qr-fold.png" class="mustache" />
 
@@ -20,16 +20,27 @@
 
             </h3>
 
-            <div class="mb-10">
+            <div>
+
+              <div class="mb-10">
               <a href="https://criptomasterclass.com/" target="_blank">
                 <img src="~static/images/logos-cm-qr.svg" class="logo-qr" />
               </a>
             </div>
 
+            <div>
 
-            <a class="btn mr-10" href="https://br.financas.yahoo.com/noticias/qr-capital-e-criptoman%C3%ADacos-lan%C3%A7am-130046424.html" target="_blank">On Press</a>
+              <a class="btn mr-10" href="https://br.financas.yahoo.com/noticias/qr-capital-e-criptoman%C3%ADacos-lan%C3%A7am-130046424.html" target="_blank">On Press</a>
 
             <a class="btn" href="https://opensea.io/collection/hodl-sapiens" target="_blank">On OpenSea</a>
+
+            </div>
+
+            </div>
+
+
+
+
 
             <h3 class="press-title mt-20">
               {{ $t('ourcompanies') }}
@@ -53,13 +64,18 @@
           </div>
         </div>
 
+        <div class="container relative m-auto  not-on-desktop">
+        <img src="~static/images/nft-qr.png" class="nft-qr" />
+      </div>
 
       </div>
 
 
 
     </section>
-    <img src="~static/images/nft-qr.png" class="nft-qr" />
+    <div class="container relative m-auto  not-on-mobile">
+      <img src="~static/images/nft-qr.png" class="nft-qr" />
+    </div>
   </div>
 
 
@@ -68,7 +84,7 @@
 
 
 export default {
-  name: 'What we do'
+  name: 'what-we-do'
 }
 </script>
 
@@ -88,17 +104,17 @@ export default {
 
 .fold-portfolio {
   justify-content: center;
-  padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+  overflow: hidden;
+  padding-top: 13px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 100%);
 }
 
 .mustache {
-  margin-top: -30px;
-  margin-bottom: -68px;
+  margin-top: -100px;
+    margin-bottom: -61px;
 }
 
 .webuild {
@@ -179,7 +195,7 @@ h4 {
     display: block;
     padding: 0 20px 57px;
     min-height: auto;
-    clip-path: polygon(0% 9%, 100% 0%, 100% 100%, 0% 100%);
+
   }
 
   .fold-portfolio h2 {
@@ -187,17 +203,7 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .fold-portfolio {
-    clip-path: polygon(0% 9%, 100% 0%, 100% 100%, 0% 100%);
-  }
-}
 
-@media only screen and (max-width: 768px) {
-  .fold-portfolio {
-    clip-path: polygon(0% 4%, 100% 0%, 100% 100%, 0% 100%);
-  }
-}
 </style>
 
 
