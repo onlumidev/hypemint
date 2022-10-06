@@ -340,7 +340,7 @@ nav li {
 
 .nft-qr {
   position: absolute;
-  margin-top: -670px;
+  margin-top: -695px;
   margin-left: -150px;
 }
 
@@ -447,6 +447,10 @@ nav li {
     right: 30px;
   }
 
+  .fold-portfolio .flex.flex-wrap {
+    align-items: center;
+  }
+
   .girafa {
     margin-bottom: -57px;
     margin-top: 70px;
@@ -513,6 +517,10 @@ nav li {
     display: none;
   }
 
+  .fold-portfolio .flex.flex-wrap {
+    align-items: initial;
+  }
+
   .nft-qr.nft-cartas {
     margin: -116px auto 0;
     max-width: 100vw;
@@ -556,10 +564,10 @@ nav li {
     right: 0px;
     position: relative;
     transform: skew(0deg, -6deg);
-    margin-bottom: -109px;
+    margin-bottom: -147px;
     max-width: 90vw;
     margin-left: 0;
-  }
+}
 
   .girafa {
     margin-top: -86px;
@@ -616,7 +624,11 @@ nav li {
   }
 
 
+  .nft-qr {
 
+    margin-bottom: -110px;
+
+}
 
 
   .mkt-text,
