@@ -653,7 +653,7 @@ nav li {
   .girafa {
     margin-bottom: -87px;
     margin-top: -4px;
-    max-width: 419px;
+
   }
 
 }
@@ -662,7 +662,7 @@ nav li {
   .girafa {
     margin-bottom: -80px;
     margin-top: -61px;
-    max-width: 404px;
+
   }
 }
 </style>
