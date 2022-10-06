@@ -16,19 +16,16 @@
         <ul
           class="hidden md:justify-end absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center w-full lg:space-x-6">
 
-          <li><a @click="scrollToAnchorPoint('#about')">{{ $t('menuportfolio') }}</a></li>
 
-          <li><a @click="scrollToAnchorPoint('#press')">{{ $t('menuabout') }}</a></li>
+          <li><a href="https://hypemint.io#about">{{ $t('menuportfolio') }}</a></li>
 
-          <!--<li><a href="#jobs">{{ $t('menujobs') }}</a></li>-->
+<li><a href="https://hypemint.io#press">{{ $t('menuabout') }}</a></li>
 
-          <li><a @click="scrollToAnchorPoint('#gaming')">{{ $t('menuteam') }}</a></li>
+<!--<li><a href="#jobs">{{ $t('menujobs') }}</a></li>-->
 
-          <li><a @click="scrollToAnchorPoint('#contact')">{{ $t('menupress') }}</a></li>
+<li><a href="https://hypemint.io#gaming">{{ $t('menuteam') }}</a></li>
 
-
-
-
+<li><a href="https://hypemint.io#contact">{{ $t('menupress') }}</a></li>
 
           <li>
             <a href="https://www.linkedin.com/company/hypemint" target="_blank">
@@ -67,15 +64,15 @@
           <div>
             <ul class="menu-mobile">
 
-              <li><a @click="scrollToAnchorPoint('#about')">{{ $t('menuportfolio') }}</a></li>
+              <li><a href="https://hypemint.io#about">{{ $t('menuportfolio') }}</a></li>
 
-<li><a @click="scrollToAnchorPoint('#press')">{{ $t('menuabout') }}</a></li>
+<li><a href="https://hypemint.io#press">{{ $t('menuabout') }}</a></li>
 
 <!--<li><a href="#jobs">{{ $t('menujobs') }}</a></li>-->
 
-<li><a @click="scrollToAnchorPoint('#gaming')">{{ $t('menuteam') }}</a></li>
+<li><a href="https://hypemint.io#gaming">{{ $t('menuteam') }}</a></li>
 
-<li><a @click="scrollToAnchorPoint('#contact')">{{ $t('menupress') }}</a></li>
+<li><a href="https://hypemint.io#contact">{{ $t('menupress') }}</a></li>
 
 
               <ul class="flex redes-mobile">
@@ -145,6 +142,9 @@ export default {
 </script>
 
 <style>
+  html {
+	scroll-behavior: smooth;
+}
 header {
 
   position: absolute;
@@ -653,6 +653,11 @@ nav li {
 
     left: 19px;
   }
+
+  .fixed .logolink {
+
+left: 0;
+}
 
   .girafa {
     margin-bottom: -78px;
