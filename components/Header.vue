@@ -596,10 +596,7 @@ nav li {
     text-align: center;
   }
 
-  .nft-qr {
-    max-width: 431px;
-    margin: -23px auto -102px;
-  }
+
 
 
   .nft-qr.nft-moments {
