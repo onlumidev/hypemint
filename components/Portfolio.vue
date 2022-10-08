@@ -110,6 +110,7 @@ export default {
   overflow: hidden;
   padding-top: 13px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 100%);
+  clip-path: polygon(0% 0%, 0% 9%, 0% 9%, 100% 0%, 100% 10%, 100% 0, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
 }
 
 .mustache {

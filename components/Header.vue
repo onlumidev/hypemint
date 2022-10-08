@@ -370,6 +370,11 @@ nav li {
     transform: none;
 }
 
+
+.fold-portfolio {
+  clip-path: polygon(0% 0%, 0% 9%, 0% 9%, 100% 0%, 100% 10%, 100% 0, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+}
+
 .not-on-desktop {
   display: none;
 }
