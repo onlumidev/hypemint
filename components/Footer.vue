@@ -23,8 +23,8 @@
           </li>
 
           <li class="mr-5 pr-5 border-r-2">
-            <a href="mailto:hello@hypemint.io" target="_blank">
-              hello@hypemint.io
+            <a href="mailto:contact@hypemint.io" target="_blank">
+              contact@hypemint.io
             </a>
           </li>
 
