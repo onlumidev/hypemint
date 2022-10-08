@@ -10,7 +10,11 @@ export default {
     ],
     meta: [
       { charset: 'utf-8' },
+      { hid: 'og-type', property: 'og:type', content: 'website' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'og-image', property: 'og:image',
+        content: '/share-hype.png'
+      },
       { hid: 'description', name: 'description', content: 'We are a NFT art studio that creates and develops NFTs.' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
